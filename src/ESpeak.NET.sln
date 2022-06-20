@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESpeak.NET", "ESpeak.NET\ESpeak.NET.csproj", "{8D6A3B4E-9740-4EA8-8730-981ED1A2F0E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESpeak.NET.SampleConsole", "ESpeak.NET.SampleConsole\ESpeak.NET.SampleConsole.csproj", "{73944F24-72A7-4BD4-B09D-977BF55E83CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESpeak.NET.Test", "..\tests\ESpeak.NET\ESpeak.NET.Test.csproj", "{C26C2AE2-22AF-4EF3-B871-837129ABCD24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D6A3B4E-9740-4EA8-8730-981ED1A2F0E9}.Debug|x64.ActiveCfg = Debug|x64
+		{8D6A3B4E-9740-4EA8-8730-981ED1A2F0E9}.Debug|x64.Build.0 = Debug|x64
+		{8D6A3B4E-9740-4EA8-8730-981ED1A2F0E9}.Release|x64.ActiveCfg = Release|x64
+		{8D6A3B4E-9740-4EA8-8730-981ED1A2F0E9}.Release|x64.Build.0 = Release|x64
+		{73944F24-72A7-4BD4-B09D-977BF55E83CD}.Debug|x64.ActiveCfg = Debug|x64
+		{73944F24-72A7-4BD4-B09D-977BF55E83CD}.Debug|x64.Build.0 = Debug|x64
+		{73944F24-72A7-4BD4-B09D-977BF55E83CD}.Release|x64.ActiveCfg = Release|x64
+		{73944F24-72A7-4BD4-B09D-977BF55E83CD}.Release|x64.Build.0 = Release|x64
+		{C26C2AE2-22AF-4EF3-B871-837129ABCD24}.Debug|x64.ActiveCfg = Debug|x64
+		{C26C2AE2-22AF-4EF3-B871-837129ABCD24}.Debug|x64.Build.0 = Debug|x64
+		{C26C2AE2-22AF-4EF3-B871-837129ABCD24}.Release|x64.ActiveCfg = Release|x64
+		{C26C2AE2-22AF-4EF3-B871-837129ABCD24}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+EndGlobal

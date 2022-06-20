@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>.NET wrapper for eSpeak.</Description>
+    <AssemblyVersion>0.0.0.1</AssemblyVersion>
+    <Authors>Edward Davis</Authors>
+    <TargetFrameworks>net5.0;net5.0-windows;net6.0;net6.0-windows</TargetFrameworks>
+    <Platform>x64</Platform>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>portable</DebugType>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <_IsWindows Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))' == 'true'">true</_IsWindows>
+    <_IsLinux Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' == 'true'">true</_IsLinux>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Condition=" '$(_IsWindows)' == 'true' " Include="..\..\lib\win-x64\libespeak-ng.dll">
+      <PublishPath>$(OutDir)</PublishPath>
+      <Publish>true</Publish>
+      <PackagePath>$(OutDir)</PackagePath>
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Condition=" '$(_IsLinux)' == 'true' " Include="..\..\lib\linux-x64\libespeak-ng.so">
+      <PublishPath>$(OutDir)</PublishPath>
+      <Publish>true</Publish>
+      <PackagePath>$(OutDir)</PackagePath>
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\share\**\*.*">
+      <PublishPath>$(OutDir)</PublishPath>
+      <Publish>true</Publish>
+      <PackagePath>$(OutDir)</PackagePath>
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
